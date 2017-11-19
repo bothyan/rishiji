@@ -1,3 +1,19 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html,
 body {
   height: 100%;
@@ -36,7 +52,7 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  background: url(../images/loading.gif);
+  background: #e1d6bf url(../images/loading.gif);
   margin-left: -375px;
   z-index: 50;
 }
@@ -57,6 +73,224 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  background: url(../images/bg.png);
+  background: #e1d6bf url(../images/bg.png);
   margin-left: -375px;
+}
+.index .lays {
+  width: 100%;
+  height: 100%;
+  background: #8b8b8b;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  z-index: 20;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.index .mc {
+  position: absolute;
+  z-index: 10;
+}
+.index .mc1 {
+  width: 619px;
+  height: 165px;
+  top: 0;
+  left: 50px;
+  background: url(../images/load2.png);
+}
+.index .mc2 {
+  width: 619px;
+  height: 165px;
+  top: 652px;
+  left: 378px;
+  background: url(../images/load2.png);
+}
+.index .mc3 {
+  width: 619px;
+  height: 153px;
+  top: 240px;
+  right: 290px;
+  background: url(../images/load1.png);
+}
+.index .mc4 {
+  width: 619px;
+  height: 153px;
+  top: 838px;
+  left: 90px;
+  background: url(../images/load1.png);
+}
+.index .mc5 {
+  width: 414px;
+  height: 374px;
+  top: 285px;
+  left: 382px;
+  background: url(../images/load3.png);
+}
+.index .mc6 {
+  width: 414px;
+  height: 374px;
+  top: 955px;
+  left: 30px;
+  background: url(../images/load3.png);
+}
+.index .mc7 {
+  width: 309px;
+  height: 324px;
+  top: 50px;
+  left: 560px;
+  background: url(../images/load5.png);
+  z-index: 9;
+}
+.index .mc8 {
+  width: 309px;
+  height: 324px;
+  top: 335px;
+  left: 105px;
+  background: url(../images/load5.png);
+  z-index: 9;
+}
+.index .mc9 {
+  width: 414px;
+  height: 374px;
+  top: 510px;
+  left: -120px;
+  background: url(../images/load3.png);
+}
+.index .mc9 {
+  width: 251px;
+  height: 301px;
+  top: 980px;
+  left: 464px;
+  background: url(../images/load4.png);
+}
+.index .logo {
+  width: 65px;
+  height: 153px;
+  bottom: 30px;
+  left: 30px;
+  position: absolute;
+  background: url(../images/logo.png);
+  z-index: 50;
+}
+.index .word {
+  width: 103px;
+  height: 701px;
+  top: 50%;
+  margin-top: -351px;
+  left: 400px;
+  position: absolute;
+  background: url(../images/word.png);
+  z-index: 50;
+}
+.index .light1 {
+  width: 412px;
+  height: 607px;
+  top: 50%;
+  margin-top: -304px;
+  left: 50px;
+  position: absolute;
+  background: url(../images/guang.png);
+  z-index: 50;
+  -webkit-animation: fadeIn 1.5s linear infinite alternate;
+  -moz-animation: fadeIn 1.5s linear infinite alternate;
+  -ms-animation: fadeIn 1.5s linear infinite alternate;
+  -o-animation: fadeIn 1.5s linear infinite alternate;
+  animation: fadeIn 1.5s linear infinite alternate;
+}
+.index .go {
+  width: 412px;
+  height: 607px;
+  top: 50%;
+  margin-top: -304px;
+  left: 50px;
+  position: absolute;
+  background: url(../images/btng.png);
+  z-index: 60;
+}
+.index .go .start {
+  height: 370px;
+  width: 140px;
+  position: absolute;
+  top: 119px;
+  left: 136px;
+}
+.result {
+  display: none;
+  width: 750px;
+  height: 1334px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: #32425e url(../images/bgre.png);
+  margin-left: -375px;
+}
+.result .maore {
+  position: absolute;
+  width: 497px;
+  height: 832px;
+  bottom: 20px;
+  right: 60px;
+  background: url(../images/mao.png);
+}
+.result .des {
+  width: 380px;
+  height: 340px;
+  top: 90px;
+  right: 110px;
+  color: #f6da7a;
+  font-size: 60px;
+  position: absolute;
+  letter-spacing: 5px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.result .buttonbg {
+  width: 225px;
+  height: 368px;
+  position: absolute;
+  left: 0;
+}
+.result .buttonbg .bbg {
+  width: 225px;
+  height: 368px;
+  background: url(../images/lights.png) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.result .buttonbg1 {
+  top: 80px;
+}
+.result .buttonbg2 {
+  top: 483px;
+}
+.result .buttonbg3 {
+  top: 886px;
+}
+.result .restart {
+  width: 103px;
+  height: 262px;
+  background: url(../images/restart.png) no-repeat;
+  top: 53px;
+  left: 61px;
+  position: absolute;
+}
+.result .hrefs {
+  width: 103px;
+  height: 262px;
+  background: url(../images/hrefs.png) no-repeat;
+  top: 53px;
+  left: 61px;
+  position: absolute;
+}
+.result .share {
+  width: 103px;
+  height: 262px;
+  background: url(../images/share.png) no-repeat;
+  top: 53px;
+  left: 61px;
+  position: absolute;
 }

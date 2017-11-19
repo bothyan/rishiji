@@ -135,7 +135,7 @@
 			
 			this.handle();
 			this.initMusic();
-			this.load();
+			//this.load();
 			//this.weixinshare();
 		},
 		load:function(){
@@ -147,6 +147,7 @@
 					'guang.png',
 					'hrefs.png',
 					'lights.png',
+					'word.png',
 					'load1.png',
 					'load2.png',
 					'load3.png',
@@ -292,7 +293,15 @@
 			$("body").bind("touchmove",function(e){
 				e.preventDefault();		
 			});
-			
+			$("#restart").bind(startevent,function(e){
+				window.location.reload();
+			});
+			$("#hrefs").bind(startevent,function(e){
+				window.location.href = "";
+			});
+			$("#share").bind(startevent,function(e){
+				
+			});
 		},
 		audioAutoPlay:function(id){
 			var audio = document.getElementById(id),
