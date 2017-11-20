@@ -14,6 +14,7 @@
 <link href="css/common.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/zhuamao.css" />
 <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/phaser.min.js" ></script>
 </head>
 <body>
 <!-- 音效start -->
@@ -26,9 +27,9 @@
 <!-- 音效end-->
 <div class="content">
 	<div class="loading-img" id="loading-img"></div>
-  	<div class="loading" id="loading" style="display:none">
-	    <p class="percent" id="percent"><em>0</em> %</p>
-  	</div>
+  	<div class="loading" id="loading" style="display:block">
+	   <!--  <p class="percent" id="percent"><em>0</em> %</p>-->
+	     	</div> 
   	<div id="index" class="index">
 		<div class="mc mc1"></div>
 		<div class="mc mc2"></div>
@@ -48,8 +49,11 @@
 		</div>
 		<div class="logo"></div>
   	</div>
+  	<div id="game" class="game">
+		
+  	</div>
   	<div id="result" class="result">
-  		<p class="des">张三每天被8只猫环绕，幸福的你想不到</p>
+  		<p class="des">张三每天被<em id="nummao">8</em>只猫环绕，幸福的你想不到</p>
   		<div class="maore"></div>
   		<div class="buttonbg buttonbg1">
   			<div class="bbg"></div>
